@@ -196,6 +196,24 @@ label:active {
 		opacity: 0;
 	}
 
+	.bayan:hover label:active .bayan__icon--close,
+	.bayan:hover label:active .bayan__icon--open {
+		opacity: 0;
+	}
+
+	.bayan:hover label:active .bayan__icon--active {
+		opacity: 1;
+	}
+
+	.bayan:hover	input:checked + label:active .bayan__icon--open,
+	.bayan:hover input:checked + label:active .bayan__icon--close {
+		opacity: 0;
+	} 
+
+	.bayan:hover input:checked + label:active .bayan__icon--active {
+		opacity: 1;
+	}
+
 	.bayan__element:hover .bayan__content {
 		height: var(--img-height);
 	}
